@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	    <link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/admin.css">
+		<link rel="stylesheet" href="css/app.css">
+		<style>
+			.admin-main{
+				padding-top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="am-cf admin-main">
+		<!-- content start -->
+		<div class="admin-content">
+			<div class="admin-content-body">
+				<div class="am-g">
+					<form class="am-form am-form-horizontal"
+						 method="post"
+						style="padding-top:30px;" data-am-validator>
+						<div class="am-form-group">
+							<label for="user-name" class="am-u-sm-3 am-form-label">
+							新しいパスワード</label>
+							<div class="am-u-sm-9">
+								<input type="password" id="doc-vld-pwd-1" required placeholder="新しいパスワードを入力してください"
+									name="password"> <small>新しいパスワードを入力</small>
+							</div>
+						</div>
+						<div class="am-form-group">
+							<label for="user-name" class="am-u-sm-3 am-form-label">
+								二度確認</label>
+							<div class="am-u-sm-9">
+								<input type="password" id="doc-vld-pwd-2" required placeholder="もう一度入力してください"
+									name="pwd"  data-equal-to="#doc-vld-pwd-1"  required> <small>もう一度入力</small>
+							</div>
+						</div>
+						<div class="am-form-group">
+							<div class="am-u-sm-9 am-u-sm-push-3">
+								<input type="submit" class="am-btn am-btn-success" value="パスワード変更" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript"
+		src="assets/js/libs/jquery-1.10.2.min.js">
+	</script>
+	<script type="text/javascript" src="myplugs/js/plugs.js">
+	</script>
+	</body>
+</html>
