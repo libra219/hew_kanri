@@ -7,7 +7,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	<title>管理者ページ</title>
-
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
@@ -70,7 +69,7 @@
 										 </a>
 								 </li>
 	                <li>
-	                    <a href="javascript:void(0)" onclick="updatePwd('パスワード変更',5)">
+	                    <a href="updatePwd.html" target="right">
 	                        <i class="material-icons">location_on</i>
 	                        <p>パスワード変更</p>
 	                    </a>
@@ -145,17 +144,7 @@
 
 	<script type="text/javascript" src="myplugs/js/plugs.js">
 		</script>
-		<script type="text/javascript">
-			//添加编辑弹出层
-			function updatePwd(title, id) {
-				$.jq_Panel({
-					title: title,
-					iframeWidth: 500,
-					iframeHeight: 300,
-					url: "updatePwd.html"
-				});
-			}
-		</script>
+	
 
 
 	<script type="text/javascript">
